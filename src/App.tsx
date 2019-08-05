@@ -1,26 +1,60 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { MuiThemeProvider, CssBaseline, Typography, AppBar, Toolbar } from '@material-ui/core';
+import theme from './theme';
+import data from './hazards.json';
+import Hazards from './Hazards';
+import Start from './Start';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface IAppProps { }
+
+interface IAppState {
+  turn: number;
+  incrementalHazards: boolean;
+  maxTurns: number;
+}
+
+class App extends React.Component<IAppProps, IAppState> {
+  constructor(props: IAppProps) {
+    super(props);
+    this.state = {
+      turn: 0,
+      incrementalHazards: true,
+      maxTurns: 3
+    }
+  }
+
+  public render(): JSX.Element {
+    const t = theme()
+    return (
+      <div className="App">
+        <MuiThemeProvider theme={t}>
+          <CssBaseline />
+          <div className="App-content">
+            <AppBar position="fixed">
+              <Toolbar>
+                <Typography variant="h6">
+                  Hazard Phase {this.state.turn}
+                </Typography>
+              </Toolbar>
+            </AppBar>
+            {this.state.turn === 0 ?
+              <Start
+                startGame={() => this.setState({ turn: this.state.turn + 1 })}
+                incrementalHazards={this.state.incrementalHazards}
+                toggleIncrementalHazards={() => this.setState({ incrementalHazards: !this.state.incrementalHazards })}
+              /> :
+              <Hazards
+                hazards={data.hazards}
+                nextTurn={() => this.setState({ turn: this.state.turn + 1 })}
+                hasNextTurn={this.state.turn < this.state.maxTurns}
+                {...this.state}
+              />
+            }
+          </div>
+        </MuiThemeProvider>
+      </div>
+    );
+  }
 }
 
 export default App;
