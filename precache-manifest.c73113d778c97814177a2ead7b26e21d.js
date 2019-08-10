@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd24fb2199b1b68e6eb76a5eb1a0e131",
+    "revision": "ed80b784a168dd1733efa329a01005de",
     "url": "/hazardous-underworlds/index.html"
   },
   {

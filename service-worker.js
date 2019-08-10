@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hazardous-underworlds/precache-manifest.3cdc00b62d611aaf67197e268cc953b7.js"
+  "/hazardous-underworlds/precache-manifest.c73113d778c97814177a2ead7b26e21d.js"
 );
 
 self.addEventListener('message', (event) => {
