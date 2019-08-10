@@ -1,124 +1,144 @@
 {
   "hazards": [
     {
+      "id": 0,
       "title": "Aqshy Realmscape",
       "flavour": "The arena temperature spikes tremendously, the air shimmering in the sudden heat.",
       "effect": "Roll an attack dice for each fighter. On a of !crit! that fighter is *dealt* 1 damage unless it would take this fighter out of action.",
-      "duration": "*Discard* this card."
+      "duration": 0
     },
     {
+      "id": 1,
       "title": "Burning Comet",
-      "flavour": "The cailing of the arena opens like a colosal observatory. One of countless shining stars detaches from the firmament and crashes into the arena floor as a burning chunk of star-matter.",
-      "effect": "The players *roll off*. Them winnes *places* the Burning Comet token in an *empty* hex. When the Burning Comet token in *placed* all fighter adjacent to that hex are *dealt* 1 damage. That hex is blocked.",
-      "duration": "The effect of this hazard card lasts until the end of the game."
+      "flavour": "The ceiling of the arena opens like a colossal observatory. One of countless shining stars detaches from the firmament and crashes into the arena floor as a burning chunk of star-matter.",
+      "effect": "The players *roll off*. The winner *places* the Burning Comet token in an *empty* hex. When the Burning Comet token is *placed* all fighter adjacent to that hex are *dealt* 1 damage. That hex is blocked.",
+      "duration": 99
     },
     {
+      "id": 2,
       "title": "Ghur Ambershard",
       "flavour": "A roar that reverberates in the fighters' skull echoes around the arena as large ambershards break through the stone floor . Fighters near these shards find that their weapons gnashing and tearing at the enemy, as if driven by a bestial vigour of their own.",
-      "effect": "The players *roll off*. The winner *places* the Ghur Ambershard token in an *empty* hex. That hex is *blocked*. Range 1 and Range 2 *Atack actions* made by fighters adjacent to the Ghur Ambershard token have +1 Damage.",
-      "duration": "The effect of this hazard card lasts until the end of the game."
+      "effect": "The players *roll off*. The winner *places* the Ghur Ambershard token in an *empty* hex. That hex is *blocked*. Range 1 and Range 2 *Attack actions* made by fighters adjacent to the Ghur Ambershard token have +1 Damage.",
+      "duration": 99
     },
     {
+      "id": 3,
       "title": "Teleportation Glitch",
       "flavour": "'Ah, company...' - Widow Caitha",
       "effect": "The players *roll off*. Starting with the loser, each player picks one surviving friendly fighter. *Place* each fighter in the hex that was occupied by the other fighter when you picked them.",
-      "duration": "*Discard* this card."
+      "duration": 0
     },
     {
+      "id": 4,
       "title": "Shyish Realmscape",
       "flavour": "Death magic suffuses the arena and healed wounds reopen, allowing blood and death to flow freely once more.",
       "effect": "At the start of the end phase, the players *roll off*. Starting with the loser, the players roll an attack dice for each friendly fighter that has one or more wound tokens. On a roll of !hammer! that fighter is *dealt* 1 damage.",
-      "duration": "*Discard* this card at the start of the next hazard phase."
+      "duration": 1
     },
     {
+      "id": 5,
       "title": "Azyr Realmscape",
       "flavour": "Crackling lightning fills the chamber, striking those too slow to avoid it.",
       "effect": "At the start of the end phase, each fighter that has no Move or Charge tokens is *dealt* 1 damage.",
-      "duration": "*Discard* this card at the start of the next hazard phase."
+      "duration": 1
     },
     {
+      "id": 6,
       "title": "Katophrane Defence Systems",
       "flavour": "The eyes of a nearby statue blaze as they open, and a lethal beam of pure magical energy tracks across the ground.",
-      "effect": "The players *roll off*. The winner picks an *empty* or *occupied* hex, then three more hexes, each of which must be adjacent to the last hex picked. No hex may be picked more than once. The winner toll an attack dice for each fighter standing in a picked hex; on a roll of !hammer! that fighter is *dealt* 1 damage",
-      "duration": "*Discard* this card."
+      "effect": "The players *roll off*. The winner picks an *empty* or *occupied* hex, then three more hexes, each of which must be adjacent to the last hex picked. No hex may be picked more than once. The winner roll an attack dice for each fighter standing in a picked hex; on a roll of !hammer! that fighter is *dealt* 1 damage",
+      "duration": 0
     },
     {
+      "id": 7,
       "title": "Whirling Saw Blade",
       "flavour": "'Aarrrggh!'",
       "effect": "The players *roll off*. The winner picks one fighter of the battlefield and rolls an attack dice. On a roll of !hammer! or !crit!, that fighter is dealt 1 damage.",
-      "duration": "*Discard* this card."
+      "duration": 0
     },
     {
+      "id": 8,
       "title": "A Prize Revealed",
-      "flavour": "'There it is warriors. Quickly before the others arive!' - Gwynne Ironsoul",
-      "effect": "In an end phase, if a fighter is standing in the hex that is closest to the center of the battlefield, that fighter's player gains 3 glory points and *discards* this card. If multiple hexes are equidistant to the center of the battlefield, the players *roll off* at the start of the end phase. The winner decides which of those hexes will be affected by this card.",
-      "duration": "The effect of this hazard card lasts until the end of the game."
+      "flavour": "'There it is warriors. Quickly before the others arrive!' - Gwynne Ironsoul",
+      "effect": "In an end phase, if a fighter is standing in the hex that is closest to the centre of the battlefield, that fighter's player gains 3 glory points and *completes* this card. If multiple hexes are equidistant to the centre of the battlefield, the players *roll off* at the start of the end phase. The winner decides which of those hexes will be affected by this card.",
+      "duration": 98
     },
     {
-      "title": "Unremitting Voilence",
-      "flavour": "'Rend thir bodies and tear their essence from their screaming souls!' - Lady Harrow",
-      "effect": "All *Attack action* have *Innate* (!hammer!!sword!) until this card is *discarded*",
-      "duration": "*Discard* this card at the end of the next hazard phase."
+      "id": 9,
+      "title": "Unremitting Violence",
+      "flavour": "'Rend their bodies and tear their essence from their screaming souls!' - Lady Harrow",
+      "effect": "All *Attack action* have *Innate* (!hammer!!sword!).",
+      "duration": 2
     },
     {
+      "id": 10,
       "title": "Crumbling Floors",
       "flavour": "The arena floor hides many hazards, not least of which are deep, darks pits that open suddenly beneath unwary warriors.",
       "effect": "The players *roll off*. Starting with the loser, the players roll a defence dice for each friendly fighter that has the !shield! characteristic. On a roll of !shield! of !crit!, that fighter is *dealt* 1 damage.",
-      "duration": "*Discard* this card."
+      "duration": 0
     },
     {
+      "id": 11,
       "title": "Acid Bath",
       "flavour": "Originally used to clean the Katophrane's mechanical warriors after battle, only thick armour will protect you against this deluge of acid.",
       "effect": "The players *roll off*. Starting with the loser, the players roll a defence dice for each friendly fighter that has the !dodge! characteristic. On a roll of !dodge! or !crit!, that fighter is *dealt* 1 damage",
-      "duration": "*Discard* this card."
+      "duration": 0
     },
     {
+      "id": 12,
       "title": "Fluctuating Power",
       "flavour": "The Dreadfane pulses with forbidden power, and opportunity awaits those who can harness it.",
       "effect": "The players *roll off*. Starting with the loser, the players *draw* two power cards, and the *discard* two power cards.",
-      "duration": "*Discard* this card."
+      "duration": 0
     },
     {
+      "id": 13,
       "title": "Spark of Ignition",
       "flavour": "A stray spark of magical power leaks into the ancient machinery of the arena and it lashes out, striking anyone unlucky enough to be nearby.",
-      "effect": "The players *roll off*. Starting with the winner, each player picks up to one enemy fighter adjacent to a *blocked* hex and roll an attack dice. On a rll of !hammer! or !crit! that fighter is *delat* 1 damage.",
-      "duration": "*Discard* this card."
+      "effect": "The players *roll off*. Starting with the winner, each player picks up to one enemy fighter adjacent to a *blocked* hex and roll an attack dice. On a roll of !hammer! or !crit! that fighter is *dealt* 1 damage.",
+      "duration": 0
     },
     {
+      "id": 14,
       "title": "Contest of Champions",
       "flavour": "'Let me show you true strength!' - Tavian of Sarnassus",
       "effect": "The players *roll off*. Starting with the loser, each player picks up to one friendly surviving friendly fighter. Those fighters become Inspired.",
-      "duration": "*Discard* this card."
+      "duration": 0
     },
     {
+      "id": 15,
       "title": "Tilted Arena Floor",
       "flavour": "The arena suddenly tilts as though upon a huge axis, sending fighters flying.",
-      "effect": "The players *roll off*. The winner picks an *edge* hex. Each player pushes each enemy fighter one hex towards the picked hex, starting with the player who lost the *roll off*. In a fighter cannot be *pushed* this wat, that fighter is not *pushed*.",
-      "duration": "*Discard* this card."
+      "effect": "The players *roll off*. The winner picks an *edge* hex. Each player pushes each enemy fighter one hex towards the picked hex, starting with the player who lost the *roll off*. In a fighter cannot be *pushed* this way, that fighter is not *pushed*.",
+      "duration": 0
     },
     {
+      "id": 16,
       "title": "Change of Plans",
       "flavour": "'I've' has an idea...' - Tavian of Sarnassus",
       "effect": "The players *roll off*. Starting with the loser, each players *draws* on objective card and *discards* one objective card. If a player has no cards remaining in their objective deck, they do not *draw* or*discard* an objective card.",
-      "duration": "*Discard* this card."
+      "duration": 0
     },
     {
+      "id": 17,
       "title": "Whirring Blades",
       "flavour": "Spinning saw blades emerge from the walls of the arena.",
       "effect": "Any fighter that makes a *Move action* that takes them through, or is *pushed* through, and *edge* hex is *dealt* 1 damage for each *edge* hex they move or are *pushed* through.",
-      "duration": "The effect of this hazard card lasts until the end of the game."
+      "duration": 99
     },
     {
+      "id": 18,
       "title": "Gravity Well",
-      "flavour": "An ancient spell manifests a screaming vortex of energy in the center of the arema, dragging all towards it.",
+      "flavour": "An ancient spell manifests a screaming vortex of energy in the centre of the arena, dragging all towards it.",
       "effect": "The players *roll off*. Starting with the loser, each player *pushes* each enemy fighter one hex towards the centre of the battlefield. If multiple hexes are equidistant to the centre of the battlefield, the players *roll off*. The winner decides which of those hexes will be affected by this card. If a fighter cannot be *pushed* in this way, that fighter is not *pushed*.",
-      "duration": "*Discard* this card."
+      "duration": 0
     },
     {
+      "id": 19,
       "title": "Spear Traps",
-      "flavour": "Rusted mechanims squeal and archaic weapons spring out from the walls and retract, gouging nearby fighters.",
-      "effect": "The players *roll off*. Starting with the loser, the players make a defence roll for each of their fighter standing in an *edge* hex. If there are no *sccesses* in the roll, that fighter is *dealt* 1 damage.",
-      "duration": "*Discard* this card."
+      "flavour": "Rusted mechanism squeal and archaic weapons spring out from the walls and retract, gouging nearby fighters.",
+      "effect": "The players *roll off*. Starting with the loser, the players make a defence roll for each of their fighter standing in an *edge* hex. If there are no *successes* in the roll, that fighter is *dealt* 1 damage.",
+      "duration": 0
     }
   ]
 }
