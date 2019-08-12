@@ -146,8 +146,7 @@ class Hazards extends React.Component<IHazardsProps, IHazardsState> {
                 </Typography>
                 {this.getDuration(h.duration)}
               </CardContent>
-              {!h.completed &&
-              [Duration.ThisTurn, Duration.EntireGameOrComplete].includes(h.duration) ? (
+              {h.completed ? null : (
                 <CardActions>
                   <Button
                     className={classes.button}
@@ -157,7 +156,7 @@ class Hazards extends React.Component<IHazardsProps, IHazardsState> {
                     Complete
                   </Button>
                 </CardActions>
-              ) : null}
+              )}
             </Collapse>
           </Card>
         ))}

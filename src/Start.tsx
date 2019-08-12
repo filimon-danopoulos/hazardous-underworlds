@@ -74,8 +74,8 @@ class Start extends React.Component<IStartProps, IStartState> {
           <CardHeader title="Hazardous Underworlds" />
           <CardContent>
             <Typography variant="body1" gutterBottom>
-              You have not started a game yet. When you are readu to start a game click the arrow to
-              go to the first phase.
+              You have not started a game yet. When the boards are set up, click the arrow to go to
+              the first phase.
             </Typography>
           </CardContent>
         </Card>
@@ -83,8 +83,8 @@ class Start extends React.Component<IStartProps, IStartState> {
           <DialogTitle>New Game</DialogTitle>
           <DialogContent>
             <DialogContentText>
-              You can either play with incremental hazards, one hazard round one, two new hazards on
-              round two etc. Alternatively you can play with a single hazard per turn.
+              Incremental hazards means you will get one hazard round one, two new hazards on round
+              two etc, instead of getting a single hazard per turn.
             </DialogContentText>
             <FormControl component="fieldset" className={classes.formControl}>
               <FormLabel component="legend">Hazards per turn</FormLabel>
